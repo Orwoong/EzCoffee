@@ -14,6 +14,6 @@ public class LoginServlet extends HttpServlet {
         req.setCharacterEncoding("UTF-8");
         PrintWriter out = resp.getWriter();
         out.print("Hello");
-        
+
     }
 }
