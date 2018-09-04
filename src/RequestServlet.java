@@ -17,7 +17,7 @@ public class RequestServlet extends HttpServlet implements HttpSessionListener {
         session.setMaxInactiveInterval(10);
         try {
             System.out.println("MySession Create :"+session.getId());
-            session.setAttribute("foo","bar");
+            session.setAttribute("id",session.getId());
         } catch (Exception e) {
             System.out.println("ErrorMessage : " + e);
         }
